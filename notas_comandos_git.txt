@@ -32,10 +32,19 @@ Historial de commits
 
 Maquina del tiempo de commits
 - git checkout <commit_hash>
-- git switch <commit_hash>
+- git switch <commit_hash> *investigar para que me sirve este comando
 
 Regresando al commit más actual
 - git switch/checkout master
+
+Comparar cambios realizados en un archivo 
+- git diff
+- git diff <filename> 
+
+Comparar cambios realizados de un commit a otro
+- git diff <commitHash1> <commitHash2> 
+
+
 
 
 
