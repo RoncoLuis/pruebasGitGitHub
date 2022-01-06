@@ -1,0 +1,31 @@
+=========== Notas de Git ===========
+Cuando creas una nueva carpeta en el proyecto y dicha carpeta esta vacía, git no añade la carpeta al stagin area. Para que git comienze a realizar un seguimiento de los cambios debe tener algun archivo adentro.
+
+Hay un caso especial para usar el comando git rm --cached, y este es cuando agregamos un archivo al stagin area lo que significa que el archivo esta listo para hacer commit. Sin embargo puede ocurrir que continuemos realizando cambios en el mismo archivo. Lo que va a pasar es que git ahora tendra dos versiones del archivo; la primera es la versión realizada cuándo agregaste el archivo al stagin area (aparecerá en verde) y la segunda versión del archivo se mantendrá en la lista de seguimiento (veras el mismo archivo en rojo). Sino haz hecho commit de este archivo, git no podrá remover del stagin area este archivo a menos que ejecutes el comando
+
+ 
+
+
+
+=========== Comandos de git =========== 
+Para configurar nuestra cuenta de git debemos ejecutar los siguientes comandos
+- git config --global user.name <username>
+- git config --global user.email <email>
+
+Inicializando un proyecto con git
+- git init
+
+Estado del proyecto
+- git status
+
+Añadir los elementos al track de cambios, es decir al staging area
+- git add <filename>
+- git add . --> este comando añade todos los archivos modificados al stagin area.
+
+Retirar un archivo del stagin area.
+- git rm --cached <filename>
+- git rm --cached . --> al igual que el comando add rm retira todos los archivos
+
+
+
+
