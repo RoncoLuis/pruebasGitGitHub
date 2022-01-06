@@ -3,6 +3,7 @@ Cuando creas una nueva carpeta en el proyecto y dicha carpeta esta vacía, git n
 
 Hay un caso especial para usar el comando git rm --cached, y este es cuando agregamos un archivo al stagin area lo que significa que el archivo esta listo para hacer commit. Sin embargo puede ocurrir que continuemos realizando cambios en el mismo archivo. Lo que va a pasar es que git ahora tendra dos versiones del archivo; la primera es la versión realizada cuándo agregaste el archivo al stagin area (aparecerá en verde) y la segunda versión del archivo se mantendrá en la lista de seguimiento (veras el mismo archivo en rojo). Sino haz hecho commit de este archivo, git no podrá remover del stagin area este archivo a menos que ejecutes el comando git add y agregues los nuevos cambios (que esté solo una versión en verde).
 
+En git por defecto ya estamos trabajando sobre una rama. Esta rama por defecto es la rama "master". Una rama es: una copia exacta del proyecto en el punto en el cuál esa rama es creada. Las ramas creadas "heredan" toda la línea de cambios o "commits" anteriores a crear dicha rama.
 
 =========== Comandos de git =========== 
 Para configurar nuestra cuenta de git debemos ejecutar los siguientes comandos
@@ -32,10 +33,9 @@ Historial de commits
 
 Maquina del tiempo de commits
 - git checkout <commit_hash>
-- git switch <commit_hash> *investigar para que me sirve este comando
 
 Regresando al commit más actual
-- git switch/checkout master
+- git checkout master
 
 Comparar cambios realizados en un archivo 
 - git diff
@@ -45,8 +45,15 @@ Comparar cambios realizados de un commit a otro
 - git diff <commitHash1> <commitHash2> 
 
 Restaurar un archivo al commit anterior. Este comando borra los cambios realizados en un archivo hasta el último commit realizado.
+- git restore . --> este comando restaura todos los archivos con cambios.
 - git restore <filename>
 
+Mostrar las ramas existentes
+- git branch 
+- git branch <branchName> -->crear una nueva rama
+
+Moverse entre ramas
+- git checkout/switch <branchName>
 
 
 
