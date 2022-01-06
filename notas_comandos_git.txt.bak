@@ -37,6 +37,15 @@ Maquina del tiempo de commits
 Regresando al commit más actual
 - git switch/checkout master
 
+Comparar cambios realizados en un archivo 
+- git diff
+- git diff <filename> 
+
+Comparar cambios realizados de un commit a otro
+- git diff <commitHash1> <commitHash2> 
+
+
+
 
 
 
