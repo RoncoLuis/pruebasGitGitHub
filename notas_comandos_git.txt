@@ -30,6 +30,14 @@ Historial de commits
 - git log
 - git log --oneline --> este comando retorna todos los commits realizados de forma compacta
 
+Maquina del tiempo de commits
+- git checkout <commit_hash>
+- git switch <commit_hash>
+
+Regresando al commit más actual
+- git switch/checkout master
+
+
 
 
 
