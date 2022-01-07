@@ -5,6 +5,8 @@ Hay un caso especial para usar el comando git rm --cached, y este es cuando agre
 
 En git por defecto ya estamos trabajando sobre una rama. Esta rama por defecto es la rama "master". Una rama es: una copia exacta del proyecto en el punto en el cuál esa rama es creada. Las ramas creadas "heredan" toda la línea de cambios o "commits" anteriores a crear dicha rama.
 
+La línea de cambios entre una rama y otra van a ser diferences hasta que ejecutes un comando de unión. Este comando llevará los commits de una rama para pasarla a la otra.
+
 =========== Comandos de git =========== 
 Para configurar nuestra cuenta de git debemos ejecutar los siguientes comandos
 - git config --global user.name <username>
@@ -33,10 +35,9 @@ Historial de commits
 
 Maquina del tiempo de commits
 - git checkout <commit_hash>
-- git switch <commit_hash> *investigar para que me sirve este comando
 
 Regresando al commit más actual
-- git switch/checkout master
+- git checkout master
 
 Comparar cambios realizados en un archivo 
 - git diff
@@ -54,7 +55,7 @@ Mostrar las ramas existentes
 - git branch <branchName> -->crear una nueva rama
 
 Moverse entre ramas
-- git checkout <branchName>
+- git checkout/switch <branchName>
 
 
 

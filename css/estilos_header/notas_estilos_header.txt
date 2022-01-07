@@ -1,0 +1,3 @@
+estas son las notas de estilos del header
+probando como hacer un restore de un documento adentro de carpetas
+============= commit hasta aqui =============
