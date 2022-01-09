@@ -44,7 +44,8 @@ Comparar cambios realizados en un archivo
 Comparar cambios realizados de un commit a otro
 - git diff <commitHash1> <commitHash2> 
 
-
+Restaurar un archivo al commit anterior. Este comando borra los cambios realizados en un archivo hasta el último commit realizado.
+- git restore <filename>
 
 
 

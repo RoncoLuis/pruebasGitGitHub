@@ -47,7 +47,5 @@ Comparar cambios realizados de un commit a otro
 Restaurar un archivo al commit anterior. Este comando borra los cambios realizados en un archivo hasta el último commit realizado.
 - git restore <filename>
 
-
-
-
-
+==================================
+Esta es una nota que solo debe existir en la rama "pruebaMaster" 
