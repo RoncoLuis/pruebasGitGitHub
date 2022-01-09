@@ -49,3 +49,5 @@ Restaurar un archivo al commit anterior. Este comando borra los cambios realizad
 
 ==================================
 Esta es una nota que solo debe existir en la rama "pruebaMaster" 
+
+- más comentarios después de agregar la nueva rama.
