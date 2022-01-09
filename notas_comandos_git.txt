@@ -57,6 +57,14 @@ Mostrar las ramas existentes
 Moverse entre ramas
 - git checkout/switch <branchName>
 
+Comando para generar llave una llave publica en git
+- ssh-keygen -t ed25519 -C "<github@email.com"
+- ls -al ~/.ssh --> Listar las llaves generadas
 
+Enlazando git & github a partir de un proyecto existente
+- git remote add origin <url_repositorio> --> respositorio existente en github
+- git remote add origin https://github.com/RoncoLuis/pruebasGitGitHub.git
+- git branch -M main
+- git push -u origin main
 
 
