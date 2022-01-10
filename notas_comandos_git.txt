@@ -32,6 +32,7 @@ Realizar commit
 Historial de commits
 - git log
 - git log --oneline --> este comando retorna todos los commits realizados de forma compacta
+- git log --oneline --decorate --graph --all -->muestra los commits de una forma más visual
 
 Maquina del tiempo de commits
 - git checkout <commit_hash>

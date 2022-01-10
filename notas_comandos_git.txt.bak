@@ -64,7 +64,11 @@ Comando para generar llave una llave publica en git
 Enlazando git & github a partir de un proyecto existente
 - git remote add origin <url_repositorio> --> respositorio existente en github
 - git remote add origin https://github.com/RoncoLuis/pruebasGitGitHub.git
-- git branch -M main
+- git branch -M main --> Aquí se cambió el nombre por defecto de "master" por "main"
 - git push -u origin main
+
+Subir tu nueva rama al repositorio github
+- git push <origin> <branch_name> --> este comando sube el origen (la rama en la que te encuentras) y la sube a la rama que deseas en github. Este comando creo la rama en el repositorio externo.
+
 
 
