@@ -71,5 +71,15 @@ Enlazando git & github a partir de un proyecto existente
 Subir tu nueva rama al repositorio github
 - git push <origin> <branch_name> --> este comando sube el origen (la rama en la que te encuentras) y la sube a la rama que deseas en github. Este comando creo la rama en el repositorio externo.
 
+Mostrar repositorio remoto al que apunta git
+- git remote show origin
+
+Cambiar la dirección del repositorio remoto 
+- git remote set-url origin <new-remote-url>
+Ejemplo:
+- git remote set-url origin git@github.tcs.net:lronquil/repo-name.git
+
+
+
 
 
