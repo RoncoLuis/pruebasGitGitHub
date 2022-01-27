@@ -1,0 +1,3 @@
+#ignorar todos los archivos con extension .bak
+.gitignore.bak
+*.txt.bak
