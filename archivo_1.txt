@@ -1,1 +1,2 @@
 Este archivo se va a eliminar
+este es un cambio que se hizo desde el repositorio. Estoy probando como funciona el pull.
