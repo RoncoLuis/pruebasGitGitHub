@@ -83,9 +83,11 @@ Eliminar una rama
 - git branch -d <branch_name>
 - git branch -D <branch_name> *fuerza la eliminacion aunque no este "fully merged"
 
+Extraer y descargar el contenido en el repositorio remoto <directo> 
+- git pull
 
-
-
+Busca los cambios realizados en el repositorio remoto <validacion>. Este comando nos sirve para descargar ramas que no aparecen en nuestro repositorio local, pero si aparecen en el repositorio remoto.
+- git fetch
 
 
 
