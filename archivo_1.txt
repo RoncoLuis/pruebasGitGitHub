@@ -1,3 +1,0 @@
-Esta Línea debe causar conflicto cuando ejecute el comando git pull.
-este es un cambio que se hizo desde el repositorio. Estoy probando como funciona el pull.
-Este cambio tendra un conflicto con el repositorio local en la linea 3.
