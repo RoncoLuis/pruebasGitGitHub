@@ -26,6 +26,9 @@ Retirar un archivo del stagin area.
 - git rm --cached <filename>
 - git rm --cached . --> al igual que el comando add rm retira todos los archivos
 
+Muestra la URL y la rama en la que git ejecuta los comandos push/pull
+- git remote show origin
+
 Realizar commit
 - git commit -m "<mensaje de los cambios>"
 
