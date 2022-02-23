@@ -1,0 +1,34 @@
+Instalar JSF correctamente
+¿Apartir de que version de JSF se ha dejado de utilizar JSP?
+¿Que hace/modifica el project facets?
+- Son requerimientos/caracteristicas que puedes habilitar a tu proyecto para que cumpla con la especificacion de Java EE. Estos facets se utilizan en tiempo de ejecucion (runtime configuration). Cuando añades un facet al proyecto, entonces ese proyecto esta configurado para realizar una tarea en específico con ciertos requerimientos.
+
+/faces/* -> esta ruta te permite acceder a los faces servlet generados (archivos xhtml). Este se conoce como el "faces prefix".
+
+- Lo que esta puesto en la etiqueta <html>; es decir los xmlns se les conocen como "JSF UI Components" y son una colección te etiquetas que generan contenido html de manera automatica.
+
+Que se necesita para crear un managed bean?
+Un MB es una clase simple de Java. Además es una tecnologías totalmente diferente a los EJB (Enterprise Java Beans), por lo que no deben ser confundidos. Para crear un MB se necesita:
+- clase java publica con un contructor SIN ARGUMENTOS.
+- exponer los los metodos set/get de las propiedades (variables)
+- <<nuevo>> añadir la anotacion @ManagedBean ya que es parte de la especificacion de JSF 2.0
+-- <<update>> los MB estan desactualizados (deprecated), se tiene que actualizar a CDI. Entonces cambiamos la anotacion @ManagedBean por @Named y agregar el jar <<cdi-api-1.2.jar>>.
+
+¿Que es una ManagedBean?
+Es una simple clase de java que crea un objeto. Tiene algunas especificaciones/restricciones, por ejemplo; debe tener un constructor publico vacío para no depender de a construccion de objeto por paso de parametros. Ademas un MB debe tener la anotacion @ManagedBean o @Named. La primera opcion esta ya marcada como @deprecated en JSF 2.0 y eliminada en JSF 3.0. No debemos olvidar que el MB debe tener los metodos set/get del objeto, ya que a traves de estos metodos se lleva a cabo la comunicacion con lo que llamamos "binding" #{<managedBeanName>.<property>}. Anque el MB name es el nombre de la clase y comienza con mayusculas, hay que respetar en el "binding" comenzar con minuscula pues internamente se hace la conversion. 
+
+- Esto es un ejemplo de "setting MB Property": First name: <h:inputText id="name" value="#{theUserName}" a:placeholder="What's your name"/>
+    
+- Esto es un ejemplo de "getting MB Property": Your name is: #{theUserName}
+
+
+
+
+
+
+
+
+
+
+
+
