@@ -21,6 +21,8 @@ Es una simple clase de java que crea un objeto. Tiene algunas especificaciones/r
     
 - Esto es un ejemplo de "getting MB Property": Your name is: #{theUserName}
 
+Nueva nota agregada para la nueva branch
+
 
 
 
