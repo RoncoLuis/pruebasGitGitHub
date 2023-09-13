@@ -92,6 +92,7 @@ Extraer y descargar el contenido en el repositorio remoto <directo>
 Busca los cambios realizados en el repositorio remoto <validacion>. Este comando nos sirve para descargar ramas que no aparecen en nuestro repositorio local, pero si aparecen en el repositorio remoto.
 - git fetch
 
+Nueva nota agregada para la nueva branch
 
 
 
